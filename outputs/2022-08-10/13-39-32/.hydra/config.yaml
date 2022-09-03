@@ -1,0 +1,12 @@
+params:
+  input_images: ./data/CTC/Training/Fluo-N3DH-CE
+  input_masks: ./data/CTC/Training/Fluo-N3DH-CE
+  input_seg: ./data/CTC/Training/Fluo-N3DH-CE
+  input_model: null
+  output_csv: ./data/basic_features/
+  basic: true
+  sequences:
+  - '01'
+  - '02'
+  seg_dir: _GT/TRA
+_target_: src.datamodules.extract_features.preprocess_seq2graph_2d
