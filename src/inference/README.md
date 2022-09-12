@@ -4,12 +4,19 @@ The provided models were trained with [Fluo-N3DH-CE dataset](http://data.celltra
 [Segmentation models](http://celltrackingchallenge.net/participants/UCSB-US/#) were developed by [UCSB-US team](http://celltrackingchallenge.net/participants/UCSB-US/) and download from [cell tracking challenge homepage](http://celltrackingchallenge.net/latest-csb-results/).
 
 1. Put ctc or your datasets to data directory.
-1. Edit `<path to cell-tracker-gnn>/src/inference/config/config_inference.yaml` .
-1. Run `<path to cell-tracker-gnn>/src/inference/Fluo-N3DH-CE.sh` .
+2. Put trained parameter file in `<path to cell-tracker-gnn>/outputs/example` .
+3. Edit `<path to cell-tracker-gnn>/src/inference/config/config_inference.yaml` .
+4. Run `<path to cell-tracker-gnn>/src/inference/Fluo-N3DH-CE.sh` .
 
 example:
 ```
 git clone https://github.com/jianglonghui/cell-tracker-gnn
+
+# get trained params
+git clone https://github.com/watarungurunnn/GSoC2022_submission tmp_dir
+cp ./tmp_dir/all_params.pth ./cell-tracker-gnn/outputs/example/
+rm -rf tmp_dir
+
 cd cell-tracker-gnn
 conda create -n ctc --file requirements-conda.txt
 conda activate ctc
