@@ -1,0 +1,40 @@
+[2022-09-02 22:18:34,721][src.utils.utils][INFO] - Disabling python warnings! <config.disable_warnings=True>
+[2022-09-02 22:18:34,759][src.train][INFO] - Instantiating datamodule <src.datamodules.celltrack_datamodule_mulSeq.CellTrackDataModule>
+[2022-09-02 22:18:35,199][numexpr.utils][INFO] - Note: NumExpr detected 12 cores but "NUMEXPR_MAX_THREADS" not set, so enforcing safe limit of 8.
+[2022-09-02 22:18:35,200][numexpr.utils][INFO] - NumExpr defaulting to 8 threads.
+[2022-09-02 22:20:36,470][src.train][INFO] - Instantiating model <src.models.celltrack_plmodel.CellTrackLitModel>
+[2022-09-02 22:20:36,936][src.train][INFO] - Instantiating callback <pytorch_lightning.callbacks.ModelCheckpoint>
+[2022-09-02 22:20:36,937][src.train][INFO] - Instantiating callback <pytorch_lightning.callbacks.EarlyStopping>
+[2022-09-02 22:20:36,938][src.train][INFO] - Instantiating logger <pytorch_lightning.loggers.tensorboard.TensorBoardLogger>
+[2022-09-02 22:20:36,939][src.train][INFO] - Instantiating logger <pytorch_lightning.loggers.csv_logs.CSVLogger>
+[2022-09-02 22:20:36,939][src.train][INFO] - Instantiating trainer <pytorch_lightning.Trainer>
+[2022-09-02 22:20:36,942][pytorch_lightning.utilities.distributed][INFO] - GPU available: True, used: True
+[2022-09-02 22:20:36,942][pytorch_lightning.utilities.distributed][INFO] - TPU available: False, using: 0 TPU cores
+[2022-09-02 22:20:36,942][pytorch_lightning.utilities.distributed][INFO] - IPU available: False, using: 0 IPUs
+[2022-09-02 22:20:36,942][src.train][INFO] - Logging hyperparameters!
+[2022-09-02 22:20:38,670][src.train][INFO] - Starting training!
+[2022-09-02 22:20:38,673][pytorch_lightning.accelerators.gpu][INFO] - LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0]
+[2022-09-02 22:20:41,058][pytorch_lightning.core.lightning][INFO] - 
+   | Name            | Type                  | Params
+-----------------------------------------------------------
+0  | model           | CellTrack_Model       | 249 K 
+1  | criterion       | BCEWithLogitsLoss     | 0     
+2  | trClassMetric   | ClassificationMetrics | 0     
+3  | valClassMetric  | ClassificationMetrics | 0     
+4  | testClassMetric | ClassificationMetrics | 0     
+5  | train_PredCount | Countspecific         | 0     
+6  | val_PredCount   | Countspecific         | 0     
+7  | test_PredCount  | Countspecific         | 0     
+8  | train_TarCount  | Countspecific         | 0     
+9  | val_TarCount    | Countspecific         | 0     
+10 | test_TarCount   | Countspecific         | 0     
+-----------------------------------------------------------
+249 K     Trainable params
+0         Non-trainable params
+249 K     Total params
+1.000     Total estimated model params size (MB)
+[2022-09-02 22:24:30,530][src.train][INFO] - Starting testing!
+[2022-09-02 22:24:30,546][pytorch_lightning.accelerators.gpu][INFO] - LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0]
+[2022-09-02 22:24:30,791][src.train][INFO] - Finalizing!
+[2022-09-02 22:24:30,791][src.train][INFO] - Best checkpoint path:
+/home/watarukawakami/GSoC/cell-tracker-gnn/logs/runs/2022-09-02/22-18-32/checkpoints/epoch=87.ckpt

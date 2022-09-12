@@ -1,0 +1,3 @@
+- datamodule.dataset_params.main_path=./data/ct_features/Fluo-N3DH-CE
+- datamodule.dataset_params.exp_name=3D_CE
+- datamodule.dataset_params.drop_feat=[]
