@@ -1,0 +1,33 @@
+##### common settings #####
+# input dir
+input image dir: "./data/CTC/Test/Fluo-N3DH-CE/01" # path to input image directory
+dimension: 3 # 3 if 3D, 2 if 2D
+
+# output dir
+tracking dir: "./result/CTC/Test/Fluo-N3DH-CE/01_RES" # path to tracking output directory
+# tracking dir: False or empty #input image dir + "_RES" as default.
+
+# trained params
+checkpoint dir: "./logs/runs/example/checkpoints/epoch=87.ckpt" # path to trained cell tracking model
+all params dir: "./outputs/example/all_params.pth" # path to trained metric learning model
+
+##### segmentation settings #####
+seg conf: "./src/inference/config/config_segmentation.yaml"
+
+##### preprocessing settings #####
+minimum cell size: False # if False, the correcting mask will be omitted.
+
+##### evaluation settings #####
+seq: "01"
+GT dir: "./data/CTC/Training/Fluo-N3DH-CE/01_GT"
+os type: "Linux" # Linux or Mac or Win
+# gt of test datasets is not provided by cell tracking challenge now. Here is a example for training datasets.
+
+##### optional (Don't need to touch) #####
+# intermediate outputs
+csv output dir: "./tmp/CTC/Test/Fluo-N3DH-CE/01_CSV"
+inference dir: "./tmp/CTC/Test/Fluo-N3DH-CE/01_Inference"
+segmentation dir: "./tmp/CTC/Test/Fluo-N3DH-CE/01_SEG"  # path to segmentation output directory
+# segmentation dir: False or empty #input image dir + "_RES_SEG" as default.
+# csv output dir: False or empty #input image dir + "CSV" as default.
+# inference output dir: False or empty #input image dir + "RES_inference" as default.

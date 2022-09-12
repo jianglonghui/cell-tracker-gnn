@@ -1,4 +1,0 @@
-[2022-08-10 11:47:09,368][src.utils.utils][INFO] - Disabling python warnings! <config.disable_warnings=True>
-[2022-08-10 11:47:09,411][src.train][INFO] - Instantiating datamodule <src.datamodules.celltrack_datamodule_mulSeq.CellTrackDataModule>
-[2022-08-10 11:47:10,335][numexpr.utils][INFO] - Note: NumExpr detected 48 cores but "NUMEXPR_MAX_THREADS" not set, so enforcing safe limit of 8.
-[2022-08-10 11:47:10,335][numexpr.utils][INFO] - NumExpr defaulting to 8 threads.

@@ -1,0 +1,10 @@
+# params for segmentation
+
+model center: "./src/inference/segmentation/models/N3DCH_center_cell.h5"
+model prob: "./src/inference/segmentation/models/N3DCH_prob_cell.h5"
+
+# threshold_abs: 0.3
+# min_distance: 4
+# tile_size: [-1,512,256]
+
+write over: False # If True, the files predicted before will be written over.

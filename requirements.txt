@@ -6,8 +6,18 @@ hydra-colorlog==1.0.0
 hydra-optuna-sweeper==0.9.0rc2
 # --------- loggers --------- #
 wandb>=0.10.20
-
+# --------- segmentation --------- #
+tifffile
+numpy
+scipy
+scikit-image
+keras
+networkx
+SimpleITK
+tensorflow
+tensorflow-gpu
+imagecodecs
+pyyaml
 # --------- others --------- #
 # scikit-fmm==2021.2.2
-
-
+git+https://github.com/watarungurunnn/scikit-image
