@@ -2,6 +2,7 @@ You can run inference with [cell-tracking-challenge(ctc) datasets](http://celltr
 The provided [trained models](https://github.com/watarungurunnn/GSoC2022_submission/blob/main/all_params.pth) were trained with [Fluo-N3DH-CE dataset](http://data.celltrackingchallenge.net/challenge-datasets/Fluo-N3DH-CE.zip), which is a microscopy dataset of C.elegans.
 
 [Segmentation models](http://celltrackingchallenge.net/participants/UCSB-US/#) were developed by [UCSB-US team](http://celltrackingchallenge.net/participants/UCSB-US/) and download from [cell tracking challenge homepage](http://celltrackingchallenge.net/latest-csb-results/).
+
 Evaluation protocols are based on [cell tracking challenge](http://celltrackingchallenge.net/evaluation-methodology/).
 
 1. Put ctc or your datasets to data directory.
